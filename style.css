@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.95;
+}
+
+nav {
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #374151;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #111827;
+}
+
+.about {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.project {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+}
+
+.project h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.contact {
+    background: #111827;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 28px;
+    color: #6b7280;
+}
+
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+    }
+}
