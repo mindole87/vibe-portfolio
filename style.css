@@ -67,27 +67,13 @@ h2 {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skill {
-    background: #e0e7ff;
-    color: #3730a3;
-    padding: 10px 16px;
-    border-radius: 999px;
-    font-weight: bold;
-}
-
-.project-list {
+.competencies {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
 }
 
-.project {
+.competency {
     background: white;
     padding: 28px;
     border-radius: 18px;
@@ -95,13 +81,39 @@ h2 {
     transition: transform 0.25s ease;
 }
 
-.project:hover {
+.competency:hover {
     transform: translateY(-6px);
 }
 
-.project h3 {
+.competency h3 {
     color: #2563eb;
     margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.result {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease;
+    border-left: 4px solid #7c3aed;
+}
+
+.result:hover {
+    transform: translateY(-6px);
+}
+
+.result h3 {
+    color: #7c3aed;
+    margin-bottom: 12px;
+    font-size: 18px;
 }
 
 .contact {
